@@ -1,6 +1,6 @@
 import { getNextDays } from "./getNextDays";
 
-test("should be return the next five days", () => {
+it("should be return the next five days", () => {
   //aqui onde vai ser executado o texto
   const days = getNextDays();
   
