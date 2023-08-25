@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react-native";
 import { NextDays } from "@components/NextDays";
 
 import clearDay from "@assets/clear_day.svg";
-describe("", () => {
+describe("Component: NextDays", () => {
   it("should be render day.", () => {
     render(
       <NextDays
