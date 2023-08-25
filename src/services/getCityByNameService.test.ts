@@ -1,20 +1,11 @@
 import { api } from "./api";
 import { getCityByNameService } from "./getCityByNameService";
+import { mockCityApiResponse } from "@__tests__/mocks/mockCityApiResponse";
 
 describe("API: getCityByNameService", () => {
   it("should return city details", async () => {
-    const data = {
-      id: "1",
-      name: "São Paulo",
-      sys: {
-        county: "BR",
-      },
-      coord: {
-        lat: 123,
-        lon: 456,
-      },
-    };
-    jest.spyOn(api, "get").mockResolvedValue({ data });
+    
+    jest.spyOn(api, "get").mockResolvedValue({ data:mockCityApiResponse });
     const response = await getCityByNameService('São Paulo');
 
     expect(response.length).toBeGreaterThan(0) //retornar valor maior que 0
