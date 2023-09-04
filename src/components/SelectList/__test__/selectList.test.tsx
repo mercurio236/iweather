@@ -16,7 +16,7 @@ describe("Component: SelectList", () => {
     fireEvent.press(selectedCity); //evento para selecionar pressionando
 
     //expect(onPress).toBeCalledTimes(1); //se ela foi chamada uma vez
-    expect(onPress).toBeCalledWith(data[1]) //o que foi selecionado
+    expect(onPress).toBeCalledWith(data[0]) //o que foi selecionado
   });
 
   it("not should be show options when data props is empty", () =>{
