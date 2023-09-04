@@ -51,6 +51,7 @@ export function Search() {
           </Text>
 
           <SelectList
+  
             data={cities}
             onChange={setSearch}
             isLoading={isLoading}
